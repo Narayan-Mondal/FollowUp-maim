@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>followUp</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="container">
+      <a href="javascript:history.back()" class="logo">followUp</a>
+      <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="buttons">
+        <a href="login.html" class="button login">Login</a>
+
+      </div>
+      <button class="mobile-menu-button" onclick="toggleMenu()">&#9776;</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+      <a href="login.html" class="button login">Login</a>
+    </div>
+  </nav>
+
+  <!-- Login Form -->
+  <div class="login-container">
+    <h2>Login</h2>
+    <form action="../after_login.html" method="POST">
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Log In</button>
+    </form>
+    <div class="links">
+      <a href="Signup.html">Forgot Password?</a> | <a href="Signup.html">Sign Up</a> 
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>

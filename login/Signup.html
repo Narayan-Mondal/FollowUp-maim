@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+          <a href="javascript:history.back()" class="logo">followUp</a>
+          <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+          </div>
+          <div class="buttons">
+            <a href="login.html" class="button login">Login</a>
+    
+          </div>
+          <button class="mobile-menu-button" onclick="toggleMenu()">&#9776;</button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+          <a href="login.html" class="button login">Login</a>
+        </div>
+      </nav>
+
+    <!-- Signup Form -->
+    <div class="outer">
+        <div class="signup-container">
+            <h2>Sign Up</h2>
+            <form action="../after_login.html" method="POST" id="signupForm">
+                <input type="text" name="name" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="hidden" name="role" id="role" value="User"> <!-- Default role is User -->
+
+                <!-- Role Buttons -->
+                <div class="role-btns">
+                    <button type="button" class="role-btn" id="userBtn">User</button>
+                    <button type="button" class="role-btn" id="adminBtn">Admin</button>
+                </div>
+
+                <button type="submit">Sign Up</button>
+            </form>
+
+            <div class="links">
+                <a href="login.html">Already have an account? Log In</a>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        // JavaScript to handle role selection
+        const userBtn = document.getElementById('userBtn');
+        const adminBtn = document.getElementById('adminBtn');
+        const roleInput = document.getElementById('role');
+
+        userBtn.addEventListener('click', () => {
+            roleInput.value = 'User';
+            userBtn.style.background = '#00f2fe';
+            adminBtn.style.background = '#4facfe';
+        });
+
+        adminBtn.addEventListener('click', () => {
+            roleInput.value = 'Admin';
+            adminBtn.style.background = '#00f2fe';
+            userBtn.style.background = '#4facfe';
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>followUp</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">followUp</a>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Services</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="buttons">
+                <a href="login/login.html" class="button login">Login</a>
+            </div>
+            <button class="mobile-menu-button" onclick="toggleMenu()">&#9776;</button>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="login/login.html" class="button login">Login</a>
+
+        </div>
+    </nav>
+
+
+
+    <div class="container_box">
+        <div class="box">
+            <h2 style="color: #1f2937;"> Queries Section</h2>
+    <div>
+      <select id="orga" name="city" class="form-select">
+        <option value="">Select City</option>
+        <option value="Ahmedpur">Ahmedpur</option>
+        <option value="Aistala">Aistala</option>
+        <option value="Aknapur">Aknapur</option>
+        <option value="Alipurduar">Alipurduar</option>
+        <option value="Amlagora">Amlagora</option>
+        <option value="Amta">Amta</option>
+        <option value="Amtala">Amtala</option>
+        <option value="Andal">Andal</option>
+        <option value="Arambagh community development block">Arambagh community development block</option>
+        <option value="Asansol">Asansol</option>
+        <option value="Ashoknagar Kalyangarh">Ashoknagar Kalyangarh</option>
+        <option value="Badkulla">Badkulla</option>
+        <option value="Baduria">Baduria</option>
+        <option value="Bagdogra">Bagdogra</option>
+        <option value="Bagnan">Bagnan</option>
+        <option value="Bagula">Bagula</option>
+        <option value="Bahula">Bahula</option>
+        <option value="Baidyabati">Baidyabati</option>
+        <option value="Bakreswar">Bakreswar</option>
+        <option value="Balarampur">Balarampur</option>
+        <option value="Bali Chak">Bali Chak</option>
+        <option value="Bally">Bally</option>
+        <option value="Balurghat">Balurghat</option>
+        <option value="Bamangola community development block">Bamangola community development block</option>
+        <option value="Baneswar">Baneswar</option>
+        <option value="Bangaon">Bangaon</option>
+        <option value="Bankra">Bankra</option>
+        <option value="Bankura">Bankura</option>
+        <option value="Bansberia">Bansberia</option>
+        <option value="Bansihari community development block">Bansihari community development block</option>
+        <option value="Barabazar">Barabazar</option>
+        <option value="Baranagar">Baranagar</option>
+        <option value="Barasat">Barasat</option>
+        <option value="Bardhaman">Bardhaman</option>
+        <option value="Barjora">Barjora</option>
+        <option value="Barrackpore">Barrackpore</option>
+        <option value="Baruipur">Baruipur</option>
+        <option value="Basanti">Basanti</option>
+        <option value="Basirhat">Basirhat</option>
+        <option value="Bawali">Bawali</option>
+        <option value="Begampur">Begampur</option>
+        <option value="Belda">Belda</option>
+        <option value="Beldanga">Beldanga</option>
+        <option value="Beliatore">Beliatore</option>
+        <option value="Berhampore">Berhampore</option>
+        <option value="Bhadreswar">Bhadreswar</option>
+        <option value="Bhandardaha">Bhandardaha</option>
+        <option value="Bhatpara">Bhatpara</option>
+        <option value="Birbhum district">Birbhum district</option>
+        <option value="Birpara">Birpara</option>
+        <option value="Bishnupur">Bishnupur</option>
+        <option value="Bolpur">Bolpur</option>
+        <option value="Budge Budge">Budge Budge</option>
+        <option value="Canning">Canning</option>
+        <option value="Chakapara">Chakapara</option>
+        <option value="Chakdaha">Chakdaha</option>
+        <option value="Champadanga">Champadanga</option>
+        <option value="Champahati">Champahati</option>
+        <option value="Champdani">Champdani</option>
+        <option value="Chandannagar">Chandannagar</option>
+        <option value="Chandrakona">Chandrakona</option>
+        <option value="Chittaranjan">Chittaranjan</option>
+        <option value="Churulia">Churulia</option>
+        <option value="Contai">Contai</option>
+        <option value="Cooch Behar">Cooch Behar</option>
+        <option value="Cossimbazar">Cossimbazar</option>
+        <option value="Dakshin Dinajpur district">Dakshin Dinajpur district</option>
+        <option value="Dalkola">Dalkola</option>
+        <option value="Dam Dam">Dam Dam</option>
+        <option value="Darjeeling">Darjeeling</option>
+        <option value="Daulatpur">Daulatpur</option>
+        <option value="Debagram">Debagram</option>
+        <option value="Debipur">Debipur</option>
+        <option value="Dhaniakhali community development block">Dhaniakhali community development block
+        </option>
+        <option value="Dhulagari">Dhulagari</option>
+        <option value="Dhulian">Dhulian</option>
+        <option value="Dhupguri">Dhupguri</option>
+        <option value="Diamond Harbour">Diamond Harbour</option>
+        <option value="Digha">Digha</option>
+        <option value="Dinhata">Dinhata</option>
+        <option value="Domjur">Domjur</option>
+        <option value="Dubrajpur">Dubrajpur</option>
+        <option value="Durgapur">Durgapur</option>
+        <option value="Egra">Egra</option>
+        <option value="Falakata">Falakata</option>
+        <option value="Farakka">Farakka</option>
+        <option value="Fort Gloster">Fort Gloster</option>
+        <option value="Gaighata community development block">Gaighata community development block</option>
+        <option value="Gairkata">Gairkata</option>
+        <option value="Gangadharpur">Gangadharpur</option>
+        <option value="Gangarampur">Gangarampur</option>
+        <option value="Garui">Garui</option>
+        <option value="Garulia">Garulia</option>
+        <option value="Ghatal">Ghatal</option>
+        <option value="Giria">Giria</option>
+        <option value="Gobardanga">Gobardanga</option>
+        <option value="Gobindapur">Gobindapur</option>
+        <option value="Gopalpur">Gopalpur</option>
+        <option value="Gopinathpur">Gopinathpur</option>
+        <option value="Gorubathan">Gorubathan</option>
+        <option value="Gosaba">Gosaba</option>
+        <option value="Gosanimari">Gosanimari</option>
+        <option value="Gurdaha">Gurdaha</option>
+        <option value="Guskhara">Guskhara</option>
+        <option value="Habra">Habra</option>
+        <option value="Haldia">Haldia</option>
+        <option value="Haldibari">Haldibari</option>
+        <option value="Halisahar">Halisahar</option>
+        <option value="Harindanga">Harindanga</option>
+        <option value="Haringhata">Haringhata</option>
+        <option value="Haripur">Haripur</option>
+        <option value="Hasimara">Hasimara</option>
+        <option value="Hindusthan Cables Town">Hindusthan Cables Town</option>
+        <option value="Hooghly district">Hooghly district</option>
+        <option value="Howrah">Howrah</option>
+        <option value="Ichapur">Ichapur</option>
+        <option value="Indpur community development block">Indpur community development block</option>
+        <option value="Ingraj Bazar">Ingraj Bazar</option>
+        <option value="Islampur">Islampur</option>
+        <option value="Jafarpur">Jafarpur</option>
+        <option value="Jaigaon">Jaigaon</option>
+        <option value="Jalpaiguri">Jalpaiguri</option>
+        <option value="Jamuria">Jamuria</option>
+        <option value="Jangipur">Jangipur</option>
+        <option value="Jaynagar Majilpur">Jaynagar Majilpur</option>
+        <option value="Jejur">Jejur</option>
+        <option value="Jhalida">Jhalida</option>
+        <option value="Jhargram">Jhargram</option>
+        <option value="Jhilimili">Jhilimili</option>
+        <option value="Kakdwip">Kakdwip</option>
+        <option value="Kalaikunda">Kalaikunda</option>
+        <option value="Kaliaganj">Kaliaganj</option>
+        <option value="Kalimpong">Kalimpong</option>
+        <option value="Kalna">Kalna</option>
+        <option value="Kalyani">Kalyani</option>
+        <option value="Kamarhati">Kamarhati</option>
+        <option value="Kamarpukur">Kamarpukur</option>
+        <option value="Kanchrapara">Kanchrapara</option>
+        <option value="Kandi">Kandi</option>
+        <option value="Karimpur">Karimpur</option>
+        <option value="Katwa">Katwa</option>
+        <option value="Kenda">Kenda</option>
+        <option value="Keshabpur">Keshabpur</option>
+        <option value="Kharagpur">Kharagpur</option>
+        <option value="Kharar">Kharar</option>
+        <option value="Kharba">Kharba</option>
+        <option value="Khardaha">Khardaha</option>
+        <option value="Khatra">Khatra</option>
+        <option value="Kirnahar">Kirnahar</option>
+        <option value="Kolkata">Kolkata</option>
+        <option value="Konnagar">Konnagar</option>
+        <option value="Krishnanagar">Krishnanagar</option>
+        <option value="Krishnapur">Krishnapur</option>
+        <option value="Kshirpai">Kshirpai</option>
+        <option value="Kulpi">Kulpi</option>
+        <option value="Kultali">Kultali</option>
+        <option value="Kulti">Kulti</option>
+        <option value="Kurseong">Kurseong</option>
+        <option value="Lalgarh">Lalgarh</option>
+        <option value="Lalgola">Lalgola</option>
+        <option value="Loyabad">Loyabad</option>
+        <option value="Madanpur">Madanpur</option>
+        <option value="Madhyamgram">Madhyamgram</option>
+        <option value="Mahiari">Mahiari</option>
+        <option value="Mahishadal community development block">Mahishadal community development block
+        </option>
+        <option value="Mainaguri">Mainaguri</option>
+        <option value="Manikpara">Manikpara</option>
+        <option value="Masila">Masila</option>
+        <option value="Mathabhanga">Mathabhanga</option>
+        <option value="Matiali community development block">Matiali community development block</option>
+        <option value="Matigara community development block">Matigara community development block</option>
+        <option value="Medinipur">Medinipur</option>
+        <option value="Mejia community development block">Mejia community development block</option>
+        <option value="Memari">Memari</option>
+        <option value="Mirik">Mirik</option>
+        <option value="Mohanpur community development block">Mohanpur community development block</option>
+        <option value="Monoharpur">Monoharpur</option>
+        <option value="Muragacha">Muragacha</option>
+        <option value="Muri">Muri</option>
+        <option value="Murshidabad">Murshidabad</option>
+        <option value="Nabadwip">Nabadwip</option>
+        <option value="Nabagram">Nabagram</option>
+        <option value="Nadia district">Nadia district</option>
+        <option value="Nagarukhra">Nagarukhra</option>
+        <option value="Nagrakata">Nagrakata</option>
+        <option value="Naihati">Naihati</option>
+        <option value="Naksalbari">Naksalbari</option>
+        <option value="Nalhati">Nalhati</option>
+        <option value="Nalpur">Nalpur</option>
+        <option value="Namkhana community development block">Namkhana community development block</option>
+        <option value="Nandigram">Nandigram</option>
+        <option value="Nangi">Nangi</option>
+        <option value="Nayagram community development block">Nayagram community development block</option>
+        <option value="North 24 Parganas district">North 24 Parganas district</option>
+        <option value="Odlabari">Odlabari</option>
+        <option value="Paikpara">Paikpara</option>
+        <option value="Panagarh">Panagarh</option>
+        <option value="Panchla">Panchla</option>
+        <option value="Panchmura">Panchmura</option>
+        <option value="Pandua">Pandua</option>
+        <option value="Panihati">Panihati</option>
+        <option value="Panskura">Panskura</option>
+        <option value="Parbatipur">Parbatipur</option>
+        <option value="Paschim Medinipur district">Paschim Medinipur district</option>
+        <option value="Patiram">Patiram</option>
+        <option value="Patrasaer">Patrasaer</option>
+        <option value="Patuli">Patuli</option>
+        <option value="Pujali">Pujali</option>
+        <option value="Puncha community development block">Puncha community development block</option>
+        <option value="Purba Medinipur district">Purba Medinipur district</option>
+        <option value="Purulia">Purulia</option>
+        <option value="Raghudebbati">Raghudebbati</option>
+        <option value="Raghunathpur">Raghunathpur</option>
+        <option value="Raiganj">Raiganj</option>
+        <option value="Rajmahal">Rajmahal</option>
+        <option value="Rajnagar community development block">Rajnagar community development block</option>
+        <option value="Ramchandrapur">Ramchandrapur</option>
+        <option value="Ramjibanpur">Ramjibanpur</option>
+        <option value="Ramnagar">Ramnagar</option>
+        <option value="Rampur Hat">Rampur Hat</option>
+        <option value="Ranaghat">Ranaghat</option>
+        <option value="Raniganj">Raniganj</option>
+        <option value="Raypur">Raypur</option>
+        <option value="Rishra">Rishra</option>
+        <option value="Sahapur">Sahapur</option>
+        <option value="Sainthia">Sainthia</option>
+        <option value="Salanpur community development block">Salanpur community development block</option>
+        <option value="Sankarpur">Sankarpur</option>
+        <option value="Sankrail">Sankrail</option>
+        <option value="Santipur">Santipur</option>
+        <option value="Santoshpur">Santoshpur</option>
+        <option value="Santuri community development block">Santuri community development block</option>
+        <option value="Sarenga">Sarenga</option>
+        <option value="Serampore">Serampore</option>
+        <option value="Serpur">Serpur</option>
+        <option value="Shyamnagar, West Bengal">Shyamnagar, West Bengal</option>
+        <option value="Siliguri">Siliguri</option>
+        <option value="Singur">Singur</option>
+        <option value="Sodpur">Sodpur</option>
+        <option value="Solap">Solap</option>
+        <option value="Sonada">Sonada</option>
+        <option value="Sonamukhi">Sonamukhi</option>
+        <option value="Sonarpur community development block">Sonarpur community development block</option>
+        <option value="South 24 Parganas district">South 24 Parganas district</option>
+        <option value="Srikhanda">Srikhanda</option>
+        <option value="Srirampur">Srirampur</option>
+        <option value="Suri">Suri</option>
+        <option value="Swarupnagar community development block">Swarupnagar community development block
+        </option>
+        <option value="Takdah">Takdah</option>
+        <option value="Taki">Taki</option>
+        <option value="Tamluk">Tamluk</option>
+        <option value="Tarakeswar">Tarakeswar</option>
+        <option value="Titagarh">Titagarh</option>
+        <option value="Tufanganj">Tufanganj</option>
+        <option value="Tulin">Tulin</option>
+        <option value="Uchalan">Uchalan</option>
+        <option value="Ula">Ula</option>
+        <option value="Uluberia">Uluberia</option>
+        <option value="Uttar Dinajpur district">Uttar Dinajpur district</option>
+        <option value="Uttarpara Kotrung">Uttarpara Kotrung</option>
+      </select>
+    </div>
+    <div>
+      <select id="orga" name="orga" class="form-select">
+        <option value="">Select Organization</option>
+        <option value="Burdwan medical college & hospital">Burdwan medical college & hospital</option>
+        <option value="Burdwan high court">Burdwan high court</option>
+        <option value="wow momos">wow momos</option>
+        <option value="Mankar college">Mankar college</option>
+        <option value="Tara Ma Rice Mill">Tara Ma Rice Mill</option>
+      </select>
+    </div>
+        </div>
+        <div class="box">
+            <div style=" text-align: center; font-family: Arial, sans-serif; margin: 20px; background-color: #f4f4f9; max-width: 600px; margin: auto; padding: 20px; background: #fff; border-radius: 10px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <h3 style=" background-color: cadetblue;
+                    color: #fff;
+                    padding: 10px;
+                    text-align: center;
+                    border-radius: 5px;
+                    margin-bottom: 20px;">Burdwan Medical College & Hospital</h3>
+                <form action="#" method="POST">
+                    <label style="            font-size: 1.1em;
+                    margin-top: 10px;" for="ambulance">Free Ambulance Service:</label>
+                    <input style="width: 100%;
+                    padding: 10px;
+                    margin-top: 5px;
+                    margin-bottom: 15px;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;" type="text" id="ambulance" name="ambulance" value="102" readonly>
+        
+                    <label style="
+                                font-size: 1.1em;
+                    margin-top: 10px;" for="beds">Empty Beds:</label>
+                    <input style="width: 100%;
+                    padding: 10px;
+                    margin-top: 5px;
+                    margin-bottom: 15px;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;" type="number" id="beds" name="beds" value="250" readonly>
+        
+                    <label style="            font-size: 1.1em;
+                    margin-top: 10px;" for="blood">Blood Availability:</label>
+                    <textarea style="width: 100%;
+                    padding: 10px;
+                    margin-top: 5px;
+                    margin-bottom: 15px;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;" id="blood" name="blood" rows="6" readonly>
+        A+: 250L
+        A-: 350L
+        B+: 450L
+        B-: 200L
+        AB+: 700L
+        AB-: 500L
+        O+: 900L
+        O-: 450L
+                    </textarea>
+        
+                    <label style="            font-size: 1.1em;
+                    margin-top: 10px;" for="doctors">Active Doctors:</label>
+                    <input style="width: 100%;
+                    padding: 10px;
+                    margin-top: 5px;
+                    margin-bottom: 15px;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;" type="number" id="doctors" name="doctors" value="1500" readonly>
+        
+                    <label for="more-info">More Information:</label>
+                    <textarea style="width: 100%;
+                    padding: 10px;
+                    margin-top: 5px;
+                    margin-bottom: 15px;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;" id="more-info" name="more-info" rows="3" readonly="">Provide more details if necessary.</textarea>
+        
+                </form>
+            </div>
+        
+        </div>
+        <div class="box">Div 3</div>
+        <div class="box">Div 4</div>
+        <div>
+            <div class="info-section">
+                <div class="container" style="display: flex; gap: 24px; flex-wrap: wrap;">
+                    <div class="info-card location-card">
+                        <h3>Location</h3>
+                        <p>MANKAR COLLEGE</p>
+                        <p>Mankar, Purba Bardhaman</p>
+                        <p>time:- 24 hr</p>
+                    </div>
+                    <div class="info-card contact-card">
+                        <h3>Contact</h3>
+                        <p>Phone: 01213456789</p>
+                        <p>Email: mankarcollege@gmail.com</p>
+                        <p>Fax: 9876543210</p>
+                    </div>
+                    <div class="info-card service-card">
+                        <h3>Service</h3>
+                        <p>Web Development</p>
+                        <p>App Development</p>
+                        <p>Digital Marketing</p>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+
+
+
+
+
+   
+
+
+
+
+
+
+
+        <!-- footer -->
+
+        <footer style="margin-top: 200px;">
+            <div class="footer-container">
+                <div class="footer-section about">
+                    <h3>About FollowUp</h3>
+                    <p>
+                        FollowUp is a platform dedicated to helping you manage your daily tasks and achieve your goals
+                        efficiently. Join us and take the first step toward a more organized life!
+                    </p>
+                </div>
+
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Profile</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section social">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/narayanmondalll/" title="Facebook"><img
+                                src="https://i.ibb.co/5FgNLq5/facebook.png" alt="Facebook"></a>
+                        <a href="https://www.instagram.com/narayanmondalll/" title="Twitter"><img
+                                src="https://i.ibb.co/QCXvjLT/twitter.png" alt="Twitter"></a>
+                        <a href="https://www.instagram.com/narayanmondalll/" title="Instagram"><img
+                                src="https://i.ibb.co/XDVgtnL/instagram.png" alt="Instagram"></a>
+                        <a href="https://www.instagram.com/narayanmondalll/" title="LinkedIn"><img
+                                src="https://i.ibb.co/gwZ5YB4/linkedin.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2024 FollowUp | Designed with ❤️ by <a href="https://www.instagram.com/momentcaptured.in/">Narayan
+                        || Sabuj</a></p>
+            </div>
+        </footer>
+    </div>
+    <script src="scripts.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>
